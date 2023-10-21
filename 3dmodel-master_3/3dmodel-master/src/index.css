@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App {
+  height: 100vh;
+  background-color: #0f1523;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.image img {
+  /* width: 65%; */
+  max-height: 100%;
+  max-width: 70%;
+  margin-bottom: 10%;
+}
+
+.left, .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left, .right, .up, .down {
+  padding: 10px;
+  opacity: 0.25;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left:hover, .right:hover, .up:hover, .down:hover {
+  opacity: 1;
+}
+.left p, .right p, .up p, .down p {
+  color: white;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading span {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.controlPane {
+  position: absolute;
+  bottom: 10px;
+  background-color: aliceblue;
+  left: 43%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.App {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mvBtn {
+  padding: 10px;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin-top: 10px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.mvBtn:hover {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19)
+}
